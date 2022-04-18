@@ -1,0 +1,19 @@
+{
+  "name": "profile-node-wd9",
+  "version": "1.0.0",
+  "description": "Static profile page for treehouses Webdevelopement Techdegree, project 9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "profile-node-wd9"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2"
+  }
+}
