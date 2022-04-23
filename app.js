@@ -1,8 +1,8 @@
 // load components and assign them to a variable
 const express = require("express");
 const app = express();
-const path = require("path");
-const bodyParser = require("body-parser");
+// const path = require("path");
+// const bodyParser = require("body-parser");
 const routes = require("./routes/index");
 const createError = require('http-errors');
 
@@ -16,22 +16,28 @@ app.set("view engine", "pug");
 app.use("/", routes);
 // json
 app.use(express.json());
-// error handler
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   next(createError(404));
 });
 
 // error handler
 app.use(function(err, req, res, next) {
+  // res.locals.message = err.message;
   // set locals, only providing error in development
-  res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+  if(err.status === 404) {
+    res.locals.message = "This page doesn't exist. Please return to Home.";
+    res.render("page-not-found", {err});
+  } else {
+    res.locals.message = err.message;
+    res.render("error", {err});
+  }
+  // res.status(err.status || 500);
+  
 });
 
 // run app on port 3000. Confirm with message, if app is running on server

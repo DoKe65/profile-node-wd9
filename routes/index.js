@@ -17,7 +17,6 @@ router.get("/about", (req, res, next) => {
 router.get("/project/:id", (req, res, next) => {
   const projectId = req.params.id;
   const project = projects.find(({id}) => id === +projectId);
-  // const imageUrls = project.image_urls;
 
   if (project) {
     res.render("project", {project});
