@@ -9,6 +9,7 @@ In this 9th project of Teamtreehouses Web Development Techdegree we're asked to 
 - sample html
 - view folder with pug files to edit
 - css
+- basic script.js
 
 ### Skills used
 - javascript (node and express)

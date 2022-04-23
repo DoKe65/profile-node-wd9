@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "Employees Directory",
+      "description": "Displays 12 employees with data pulled out from randomusers.me. By clicking an employee card, the details are shown in an overlay. Possibility to switch through currently displayed employees in the modal. Searchfilter to search for empoloyees is added",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://doke65.github.io/dokels-employees-directory-wd8/",
+      "github_link": "https://github.com/DoKe65/dokels-employees-directory-wd8",
+      "image_urls": 
+      {
+        "main": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        },
+        "img1": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        },
+        "img2": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        },
+        "img3": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "project_name": "Form Control",
+      "description": "Displays 12 employees with data pulled out from randomusers.me. By clicking an employee card, the details are shown in an overlay. Possibility to switch through currently displayed employees in the modal. Searchfilter to search for empoloyees is added",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://doke65.github.io/dokels-employees-directory-wd8/",
+      "github_link": "https://github.com/DoKe65/dokels-employees-directory-wd8",
+      "image_urls": 
+      {
+        "main": {
+          "url": "static/img/form-control.png",
+          "alt": "screenshot of employees's directory main page"
+        },
+        "img1": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        },
+        "img2": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        },
+        "img3": {
+          "url": "static/img/employee-directory.png",
+          "alt": "screenshot of employees's directory main page"
+        }
+      }
+    }
+  ]
+}
