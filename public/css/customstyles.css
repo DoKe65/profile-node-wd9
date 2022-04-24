@@ -1,0 +1,86 @@
+:root {
+  --main-font: Raleway, Arial, Helvetica, sans-serif;
+  /* --secundary-font: font-family: "Oleo Script", cursive, Raleway, Arial, Helvetica, sans-serif; */
+}
+
+body, .btn-link {
+  background-color: #7f4749;
+}
+p, li {
+  font-family: var(--main-font);
+}
+
+h1,h2,h3,h4,h5,a {
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+
+h1,h2,h3,h4 {
+  font-style: italic;
+}
+
+.sidebar p, .box li, nav a {
+  font-size: 1rem;
+}
+
+.about-bio p {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+  transition: all 2s;
+}
+
+img:hover,
+.thumbnail:hover {
+  border-color: #7f4749;
+  box-shadow: none;
+}
+
+.btn-link:hover {
+  color: #7f4749;
+  background-color: #f3dac3;
+}
+
+.box {
+  background-color: #edeae7;
+}
+
+.portfolio-intro h1, .box h1, .box h6, ul, nav a {
+  color: #7f4749;
+}
+
+.sidebar {
+  background-color: #7f4749;
+}
+
+.sidebar p, .btn-link, .btn-link a {
+  color: #f3dac3;
+  transition: all 1s;
+}  
+
+article, .wrapper, nav {
+  background-color: #f3dac8;
+  border: none;
+} 
+
+.thumbnail-box .thumbnail, .project-img, .cell img {
+  border-color: #f3dac3;
+}
+
+.sidebar a, .sidebar h5 {
+  color: #f7a753;
+} 
+
+.portfolio-intro p, .cell h5, .box p {
+  color: #663234;
+}
+
+.portfolio-intro p {
+  border-color: #663234;
+}
+
+.project-img, .cell img {
+  box-shadow: 0 0 6px 7px rgb(127 71 73 / 30%);
+}

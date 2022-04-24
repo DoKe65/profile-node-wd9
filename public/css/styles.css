@@ -31,7 +31,7 @@ article {
   background: #fefefe;
 }
 
-h1,h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5,p,a{
   font-family: 'Merriweather', serif;
 }
 
@@ -361,4 +361,10 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+/* Custom styles */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }

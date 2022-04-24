@@ -7,9 +7,10 @@ block content
         span &larr;
         |  Back
       
-      h1 Sorry - an error occured!
-      h2= `Status: ${error.status}`
-      p= message
-      button 
-        a(href="/") Return Home
-      pre #{error.stack}
+  .box
+    h1 Sorry - an error occured!
+    h2= `Status: ${error.status}`
+    p= message
+    button 
+      a(href="/") Return Home
+    pre #{error.stack}
