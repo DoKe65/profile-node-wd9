@@ -3,7 +3,7 @@
     {
       "id": 0,
       "project_name": "Employees Directory",
-      "description": "Displays 12 employees with data pulled out from randomusers.me. By clicking an employee card, the details are shown in an overlay. Possibility to switch through currently displayed employees in the modal. Searchfilter to search for empoloyees is added",
+      "description": "Displays 12 employees with data pulled out from randomusers.me. By clicking an employee card, the details are shown in an overlay. You can switch through currently displayed employees in the modal. The Searchfilter to search for empoloyees in real time helps to find the person you're looking for. HTML, CSS and JavaScript are written from scratch, only basic mockups where provided.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://doke65.github.io/dokels-employees-directory-wd8/",
       "github_link": "https://github.com/DoKe65/dokels-employees-directory-wd8",
@@ -14,43 +14,131 @@
           "alt": "screenshot of employees's directory main page"
         },
         "img1": {
-          "url": "static/img/employee-directory.png",
-          "alt": "screenshot of employees's directory main page"
+          "url": "static/img/details/employee-dir-modal.png",
+          "alt": "screenshot of employees's directory modal"
         },
         "img2": {
-          "url": "static/img/employee-directory.png",
-          "alt": "screenshot of employees's directory main page"
-        },
-        "img3": {
-          "url": "static/img/employee-directory.png",
-          "alt": "screenshot of employees's directory main page"
+          "url": "static/img/details/employee-dir-search.png",
+          "alt": "screenshot of employees's directory search results"
         }
       }
     },
     {
       "id": 1,
       "project_name": "Form Control",
-      "description": "Displays 12 employees with data pulled out from randomusers.me. By clicking an employee card, the details are shown in an overlay. Possibility to switch through currently displayed employees in the modal. Searchfilter to search for empoloyees is added",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "live_link": "https://doke65.github.io/dokels-employees-directory-wd8/",
-      "github_link": "https://github.com/DoKe65/dokels-employees-directory-wd8",
+      "description": "This form shows how you can control form elements using JavaScript. There are realtime validity checks for most of the form fields, as well as a final check, when a user tries to submit the form - it only works, if all required fields are filled out correctly. Try it out - it doesn't submit anything, you're save and you won't have to attend any conference! The following files where provided: index.html and styles.css. JavaScript was written from scratch.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Regex"],
+      "live_link": "https://doke65.github.io/dokels-interactive-form-wd7/",
+      "github_link": "https://github.com/DoKe65/dokels-interactive-form-wd7",
       "image_urls": 
       {
         "main": {
           "url": "static/img/form-control.png",
-          "alt": "screenshot of employees's directory main page"
+          "alt": "screenshot of the form's main page"
         },
         "img1": {
-          "url": "static/img/employee-directory.png",
-          "alt": "screenshot of employees's directory main page"
+          "url": "static/img/details/form-control-basic.png",
+          "alt": "screenshot of the forms name and email error messages"
         },
         "img2": {
-          "url": "static/img/employee-directory.png",
-          "alt": "screenshot of employees's directory main page"
+          "url": "static/img/details/form-control-activities.png",
+          "alt": "screenshot of the forms time conflicting control"
         },
         "img3": {
-          "url": "static/img/employee-directory.png",
-          "alt": "screenshot of employees's directory main page"
+          "url": "static/img/details/form-control-payment.png",
+          "alt": "screenshot of the payment section control"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "project_name": "Pagination and Filtering",
+      "description": "Displays a list of students - similar to the employees directory. A pagination is added at the bottom, the displayed page can be changed by clicking the button of the desired page. The number of pages adjusts, depending on how much students are displayed after a search. The following files where provided: index.html, data.js, styles.css. Written from scratch: app.js.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://doke65.github.io/pagination_and_filtering_WD6/",
+      "github_link": "https://github.com/DoKe65/pagination_and_filtering_WD6",
+      "image_urls": 
+      {
+        "main": {
+          "url": "static/img/pagination.png",
+          "alt": "screenshot of student's list main page"
+        },
+        "img1": {
+          "url": "static/img/details/pagination-filter1.png",
+          "alt": "screenshot of student's list with a filter applied and only one page of students."
+        },
+        "img2": {
+          "url": "static/img/details/pagination-filter2.png",
+          "alt": "screenshot of student's list with a filter applied, turning up no results"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "project_name": "Word Guessing Game",
+      "description": "This game, inspired by the famous Wheel of Success, is played by clicking letters on an on-screen keyboard and showing up correctly guessed letters. If a player guesses all letters, a win overlay is displayed the game can be restarted. After 5 wrong guesses, the game is over and a lose overla is displayed, also with a button to restart the game. The following files where provided: index.html and styles.css, the JavaScript is fully written from scratch.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://doke65.github.io/word_guessing_game_WD5/",
+      "github_link": "https://github.com/DoKe65/word_guessing_game_WD5",
+      "image_urls": 
+      {
+        "main": {
+          "url": "static/img/gameshow.png",
+          "alt": "screenshot of an active game"
+        },
+        "img1": {
+          "url": "static/img/details/gameshow-win.png",
+          "alt": "screenshot of the game's win overlay"
+        },
+        "img2": {
+          "url": "static/img/details/gameshow-lost.png",
+          "alt": "screenshot of the game lose overlay"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "project_name": "Random Quote Generator",
+      "description": "Displays a new quote, either every few seconds or when the show another quote button is clicked. Background color randomly changes, when a new quote is displayed. Files provided: index.html, styles.css. Although the JavaScript file was existent, it only contained some instructions, but the code was written from scratch.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://doke65.github.io/random_quote_generator_WD4/",
+      "github_link": "https://github.com/DoKe65/random_quote_generator_WD4",
+      "image_urls": 
+      {
+        "main": {
+          "url": "static/img/quotes.png",
+          "alt": "screenshot of a quote"
+        },
+        "img1": {
+          "url": "static/img/details/quotes-2.png",
+          "alt": "screenshot of a quote"
+        },
+        "img2": {
+          "url": "static/img/details/quotes-3.png",
+          "alt": "screenshot of a quote"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "project_name": "HTML-Form",
+      "description": "A simple registration form, without any real functionallity. All code written from scratch. Three mockups where provided for screensizes at 320 px, 768 px and 1024 px widths.",
+      "technologies": ["HTML", "CSS"],
+      "live_link": "https://doke65.github.io/registrationForm_WD3/",
+      "github_link": "https://github.com/DoKe65/registrationForm_WD3/",
+      "image_urls": 
+      {
+        "main": {
+          "url": "static/img/form.png",
+          "alt": "screenshot of the top of the form"
+        },
+        "img1": {
+          "url": "static/img/details/form-bottom.png",
+          "alt": "screenshot of the bottom of the form"
+        },
+        "img2": {
+          "url": "static/img/details/form-mobile.png",
+          "alt": "screenshot of the form in mobile view"
         }
       }
     }
