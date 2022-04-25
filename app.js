@@ -1,10 +1,9 @@
 // load components and assign them to a variable
 const express = require("express");
 const app = express();
-// const path = require("path");
-// const bodyParser = require("body-parser");
-const routes = require("./routes/index");
 const createError = require('http-errors');
+// assign routes/index.js to routes, to make the path accessible
+const routes = require("./routes/index");
 
 // assign static middleware to enable express to use static files in folder "public"
 app.use("/static", express.static("public"));
@@ -14,7 +13,8 @@ app.set("view engine", "pug");
 
 // add routes
 app.use("/", routes);
-// json
+
+// enable express json handler
 app.use(express.json());
 
 // catch 404 and forward to error handler
@@ -24,7 +24,6 @@ app.use((req, res, next) => {
 
 // error handler
 app.use((err, req, res, next) => {
-  // res.locals.message = err.message;
   // set locals, only providing error in development
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
@@ -32,12 +31,10 @@ app.use((err, req, res, next) => {
   if(err.status === 404) {
     res.locals.message = "This page doesn't exist. Please return to Home.";
     res.render("page-not-found", {err});
-  } else {
+  } else if (res.status(err.status || 500)) {
     res.locals.message = err.message;
     res.render("error", {err});
   }
-  // res.status(err.status || 500);
-  
 });
 
 // run app on port 3000. Confirm with message, if app is running on server

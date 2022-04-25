@@ -10,7 +10,7 @@ p, li {
   font-family: var(--main-font);
 }
 
-h1,h2,h3,h4,h5,a {
+h1,h2,h3,h4,h5,a,.btn-link {
   font-family: var(--main-font);
   font-weight: 600;
 }
@@ -55,7 +55,7 @@ img:hover,
   background-color: #7f4749;
 }
 
-.sidebar p, .btn-link, .btn-link a {
+.sidebar p, .btn-link {
   color: #f3dac3;
   transition: all 1s;
 }  

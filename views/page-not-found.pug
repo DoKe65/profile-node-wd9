@@ -7,10 +7,11 @@ block content
         span &larr;
         |  Back
       
-  .box    
+  .box   
+    //- render error message and button to enable user to go to home page 
     h1 Sorry - an error occured!
     h2= `Status: ${error.status}`
     h2= message
-    button.btn-link 
-      a(href="/") Return Home
+    a(href="/") 
+      button.btn-link Return Home
       

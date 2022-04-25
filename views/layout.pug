@@ -10,7 +10,6 @@ html(lang="en" dir="ltr")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,600&display=swap" rel="stylesheet")
 
-
     link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
     link(rel="stylesheet", href="/static/css/customstyles.css")
@@ -23,13 +22,10 @@ html(lang="en" dir="ltr")
           img.thumbnail(src="/static/img/portraitdk.jpg", alt='')
         .dev-intro-box
 
-          //- Replace with your name
           h5 Doris Keller
 
-          //- Replace with description of who you are, what you do, and why you are so awesome
           p I'm a late bloomer, who discovered her passion for web developement after working addictionally with computers over 30 years.
 
-          //- Add path from your '/about' route handler to the href below
           a(href=`/about`) Learn More &rarr;
 
     .wrapper
@@ -37,7 +33,6 @@ html(lang="en" dir="ltr")
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
           span Doris Keller
 
       block content

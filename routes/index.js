@@ -1,3 +1,4 @@
+// assign functions and components to variables
 const express = require("express");
 const router = express.Router();
 const {projects} = require("../data.json");
@@ -13,11 +14,12 @@ router.get("/about", (req, res, next) => {
   res.render("about");
 });
 
-// Get project page
+// Get chosen project and render it on project page
 router.get("/project/:id", (req, res, next) => {
   const projectId = req.params.id;
   const project = projects.find(({id}) => id === +projectId);
 
+  // if project doesn't exist, pass 404-error to error handler in app.js
   if (project) {
     res.render("project", {project});
   } else {

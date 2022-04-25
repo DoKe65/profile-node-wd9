@@ -8,9 +8,13 @@ block content
         |  Back
       
   .box
+    //- Render error
     h1 Sorry - an error occured!
     h2= `Status: ${error.status}`
     p= message
-    button 
-      a(href="/") Return Home
+    //- Button that links to home page
+    a(href="/") 
+      button.btn-link Return Home
+
+    //- error stack to help developers
     pre #{error.stack}
